@@ -9,27 +9,6 @@ print ("random value is: " + str(value))
 num_tries = 0
 random_num = value
 
-# repeat part:
-# print("Oops, your number was too small! Try again:)")
-#     guess = input("Enter a number between 0 and 10:")
-#     print("You guessed " + str(guess))
-#     num_tries = num_tries + 1
-#     print("Number of tries: " + str(num_tries))
-#     if int(guess) > random_num:
-#         print("Oops, your number was too big! Try again:)")
-#         guess = input("Enter a number between 0 and 10:")
-#         print("You guessed " + str(guess))
-#         num_tries = num_tries + 1
-#         print("Number of tries: " + str(num_tries))
-#     elif int(guess) < random_num:
-#         print("Oops, your number was too small! Try again:)")
-#         guess = input("Enter a number between 0 and 10:")
-#         print("You guessed " + str(guess))
-#         num_tries = num_tries + 1
-#         print("Number of tries: " + str(num_tries))
-#     else:
-#         play_again = input("You got it!")
-#         print(num_tries)
 
 guess = input("Enter a number between 0 and 10:")
 print("You guessed " + str(guess))
