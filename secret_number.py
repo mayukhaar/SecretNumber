@@ -33,4 +33,4 @@ else:
     final_list = list(dict.fromkeys(lst_guess))
     print("Number of tries: " + str(len(final_list)))
 
-#         #when same number is repeated, make sure it doesn't count in the number of tries
+#         when same number is repeated, make sure it doesn't count in the number of tries
