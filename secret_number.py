@@ -9,34 +9,46 @@ print ("random value is: " + str(value))
 num_tries = 0
 random_num = value
 
+# repeat part:
+# print("Oops, your number was too small! Try again:)")
+#     guess = input("Enter a number between 0 and 10:")
+#     print("You guessed " + str(guess))
+#     num_tries = num_tries + 1
+#     print("Number of tries: " + str(num_tries))
+#     if int(guess) > random_num:
+#         print("Oops, your number was too big! Try again:)")
+#         guess = input("Enter a number between 0 and 10:")
+#         print("You guessed " + str(guess))
+#         num_tries = num_tries + 1
+#         print("Number of tries: " + str(num_tries))
+#     elif int(guess) < random_num:
+#         print("Oops, your number was too small! Try again:)")
+#         guess = input("Enter a number between 0 and 10:")
+#         print("You guessed " + str(guess))
+#         num_tries = num_tries + 1
+#         print("Number of tries: " + str(num_tries))
+#     else:
+#         play_again = input("You got it!")
+#         print(num_tries)
 
 guess = input("Enter a number between 0 and 10:")
 print("You guessed " + str(guess))
 num_tries = num_tries + 1
 print("Number of tries: " + str(num_tries))
+big_message = " Oops, your number was too big."
+small_message = " Oops, your number was too small."
 
-if int(guess) > random_num:
-    print("Oops, your number was too big! Try again:)")
-    guess = input("Enter a number between 0 and 10:")
-    print("You guessed " + str(guess))
-    num_tries = num_tries + 1
-    print("Number of tries: " + str(num_tries))
-elif int(guess) < random_num:
-    print("Oops, your number was too small! Try again:)")
+while int(guess) > random_num or int(guess) < random_num:
+    if int(guess) > random_num:
+         print(" Try again:)" + big_message)
+    elif int(guess) < random_num:
+        print(" Try again:)" + small_message)
     guess = input("Enter a number between 0 and 10:")
     print("You guessed " + str(guess))
     num_tries = num_tries + 1
     print("Number of tries: " + str(num_tries))
 else:
-    play_again = input("You got it!")
-    print(num_tries)
-
-    if play_again == "yes":
-        print(play_again)
-
-    else:
-        print("Bye. Have a great day!! :D ")
+    print("You got it!")
 
 
-        #figure out how to repeat game
-        #number of tries increase with game
+#         #when same number is repeated, make sure it doesn't count in the number of tries
