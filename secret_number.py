@@ -2,10 +2,8 @@ print("GUESS THE SECRET NUMBER")
 print("------------------------")
 
 from random import randint
-
 value = randint(0,10)
 # print ("random value is: " + str(value))
-# change this later, Mayukha, Mayukha, CHANGEEEEE
 
 random_num = value
 
